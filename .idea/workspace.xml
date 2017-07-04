@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c1cbca8-7725-443e-b2c3-0acf9f87ec02" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front_end/html/mainpage.html" afterPath="$PROJECT_DIR$/front_end/html/mainpage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front_end/stylesheet/footer.css" afterPath="$PROJECT_DIR$/front_end/stylesheet/footer.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front_end/stylesheet/header.css" afterPath="$PROJECT_DIR$/front_end/stylesheet/header.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front_end/stylesheet/mainpage.css" afterPath="$PROJECT_DIR$/front_end/stylesheet/mainpage.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +19,7 @@
       <file leaf-file-name="mainpage.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front_end/html/mainpage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
+            <state relative-caret-position="920">
               <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -31,8 +31,18 @@
       <file leaf-file-name="mainpage.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front_end/stylesheet/mainpage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="79" column="30" lean-forward="false" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+            <state relative-caret-position="46">
+              <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front_end/stylesheet/footer.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -41,8 +51,8 @@
       <file leaf-file-name="header.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front_end/stylesheet/header.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="698">
-              <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+            <state relative-caret-position="736">
+              <caret line="32" column="14" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -58,6 +68,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>100%</find>
+      <find>15</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -67,10 +83,10 @@
         <option value="$PROJECT_DIR$/front_end/MainPage.html" />
         <option value="$PROJECT_DIR$/front_end/main_page.html" />
         <option value="$PROJECT_DIR$/front_end/mainpage.html" />
-        <option value="$PROJECT_DIR$/front_end/stylesheet/footer.css" />
-        <option value="$PROJECT_DIR$/front_end/stylesheet/header.css" />
         <option value="$PROJECT_DIR$/front_end/html/mainpage.html" />
+        <option value="$PROJECT_DIR$/front_end/stylesheet/footer.css" />
         <option value="$PROJECT_DIR$/front_end/stylesheet/mainpage.css" />
+        <option value="$PROJECT_DIR$/front_end/stylesheet/header.css" />
       </list>
     </option>
   </component>
@@ -450,30 +466,30 @@
     <entry file="file://$PROJECT_DIR$/front_end/stylesheet/footer.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
-          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front_end/stylesheet/header.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        <state relative-caret-position="736">
+          <caret line="32" column="14" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front_end/stylesheet/mainpage.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="79" column="30" lean-forward="false" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+        <state relative-caret-position="46">
+          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front_end/html/mainpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
+        <state relative-caret-position="920">
           <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
             <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />

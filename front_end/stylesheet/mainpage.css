@@ -1,6 +1,6 @@
 #body{
     position: relative;
-    height: calc(100% - 200px);
+    height: calc(100% - 150px);
 }
 
 
@@ -33,8 +33,8 @@
 #body_bar{
     background-color: rgba(9, 255, 0, 0.5);
     width:100%;
-    height:95%;
-    /*height:50px;*/
+    /*height:95%;*/
+    height:45px;
 
 }
 
@@ -46,14 +46,14 @@
 #body_main{
     vertical-align: middle;
     width:100%;
-    height:100%;
+    height:91%;
 }
 
 #body_main_center{
     margin: 0 auto;
-    width:1200px;
-    height: 91%;
-    background-color: rgba(255, 255, 255, 0.5);
+    width:1400px;
+    height: 100%;
+    /*background-color: rgba(255, 255, 255, 0.5);*/
     overflow:hidden;
 }
 
@@ -75,17 +75,12 @@
 }
 
 .block{
-    width:25%;
-    height:50%;
-    margin: 150px 50px 150px 50px;
-
-    background-color: blue;
+    width:250px;
+    height:250px;
+    margin: 100px 100px 150px 100px;
+    border: 5px solid #000000;
+    border-radius: 20px;
+    font-weight:bold;
+    background-color: white;
     float:left;
-}
-
-.img_position{
-    width:100%;
-    height:100%;
-    margin: 0 10px 0 10px;
-    background-color:white;
 }
