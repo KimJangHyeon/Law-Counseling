@@ -67,6 +67,16 @@
     outline-color: black;
 }
 
+#btn_civil_law{
+
+}
+#btn_criminal_law{
+
+}
+#btn_real_estate{
+
+}
+
 .content{
     position: relative;
     width:100%;
@@ -75,16 +85,33 @@
 }
 
 .block{
-    width:250px;
-    height:250px;
-    margin: 100px 100px 150px 100px;
+    width:210px;
+    height:210px;
+    margin: 160px 125px 150px 125px;
+    float:left;
+
+}
+
+.block > div{
+    width:210px;
+    height:210px;
     border: 5px solid #000000;
     border-radius: 20px;
     font-weight:bold;
     background-color: white;
-    float:left;
+    overflow:hidden;
+    vertical-align: middle;
+    display:table-cell;
+    text-align:center;
 }
 
+.block a{
+    margin:3px auto;
+}
+
+.block img{
+
+}
 
 
 .block > img{

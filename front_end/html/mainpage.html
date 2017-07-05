@@ -40,17 +40,29 @@
             </div>
             <div id="body_main">
                 <div id="body_main_center">
+                    <form method="get" action="{{url_for('go_estate')}}" name="estate">
+                        <div class="block">
+                            <div id="btn_real_estate" onclick="document.getElementById('estate').submit()">
+                                <img src="../image/logo.png" onclick="document.getElementById('estate').submit()"/>
+                                <br/>
+                                <a>부동산</a>
+                                <br/>
+                            </div>
+                        </div>
+                    </form>
                     <div class="block">
-                        <img src="../image/logo.png"/>
-                        <a>부동산</a>
+                        <div id="btn_criminal_law">
+                            <img src="../image/logo.png"/>
+                            <br/>
+                            <a>부동산</a>
+                        </div>
                     </div>
                     <div class="block">
-                        <img src="../image/logo.png"/>
-                        <a></a>
-                    </div>
-                    <div class="block">
-                        <img src="../image/logo.png"/>
-                        <a>부동산</a>
+                        <div id="btn_civil_law">
+                            <img src="../image/logo.png"/>
+                            <br/>
+                            <a>부동산</a>
+                        </div>
                     </div>
                 </div>
             </div>
