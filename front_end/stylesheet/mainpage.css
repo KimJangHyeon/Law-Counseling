@@ -67,6 +67,10 @@
     outline-color: black;
 }
 
+#body_bar_content>form>p:hover{
+    color:yellow;
+}
+
 #btn_civil_law{
 
 }
@@ -115,5 +119,9 @@
 
 
 .block > img{
+
+}
+
+.block>div:hover{
 
 }
