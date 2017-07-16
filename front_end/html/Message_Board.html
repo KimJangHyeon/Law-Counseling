@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../stylesheet/header.css">
+ 	<meta charset="UTF-8">
+	<style>
+	 
+		html, body {
+            			width: 100%;
+            			height: 100%;
+            			margin: 0;
+        		}	
+		.right_area h3 {
+			position: relative; 
+			text-align:  center;
+			font-size: 32px;
+			border-bottom: solid 1px #d7dade;
+			border-top: solid 1px #d7dade;
+			padding-bottom: 15px;
+			font-weight: 600;
+			letter-spacing: -1px;
+		
+			margin-top: 50px;
+			margin-bottom: 20px;
+			background-color: #4169e1
+		}
+		.container1{
+			margin-top: 100px;
+			border: 2px solid gray;
+		}
+		
+		.header1{
+			border-bottom: 1px solid gray;
+		}
+
+		nav{
+			float:left;
+			width:400px;
+			border-right: 1px solid gray;
+		}
+
+		footer{
+				clear: both;
+			border-top: 1px solid gray;
+			text-align: center;
+			padding: 20px; 
+			background-color: #767676;
+		}
+		article{
+			float: left;
+			width: 800px;
+			border-left: 1px solid gray;
+			margin-left: -1px;
+		}
+		.story{
+			float: left;
+			background-color: #fff5ee;
+		}
+	</style>
+		<title>최덕순 법률 사무소</title>
+</head>
+<body>
+<div id="header">
+        <div id="title_bar">
+            <div class="container">
+                <form id="go_main" method="get" action="{{url_for('go_main')}}">
+                    <div id="logo">
+                        <img id="logo_img" onclick="document.getElementById('go_main').submit()" src="../image/logo.png"/>
+                    </div>
+                    <a id="title_txt" onclick="document.getElementById('go_main').submit()">최덕순 법률 사무소</a>
+                </form>
+
+            </div>
+        </div>
+        <div id="body_header">
+                <div id="body_top_bar"></div>
+                <div id="body_bar">
+                    <div id="body_bar_content">
+                        <form id="go_profile" method="get" action="{{url_for('go_profile')}}">
+                           <p onclick="document.getElementById('go_profile').submit()">프로필</p>
+                        </form>
+                        <p>|</p>
+                        <form id="go_navigation" method="get" action="{{url_for('go_navigation')}}">
+                           <p onclick="document.getElementById('go_navigation').submit()">찾아 오시는 길</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+ </div>
+<div class="container1">
+	<div class="header1">
+		<div class="right_area">
+			<h3> 변호사 소개 </h3>	
+		</div>
+	</div>
+<nav>
+	<div class="profil_picture">
+	<img src="../image/profil.jpg" alt="">
+	</div>
+</nav>
+<article>
+
+	<div class="story">
+		<h2>확실한 선택...</h2>
+		하였으며, 그와 방지하는 방황하여도, 얼마나 뿐이다. 그들은 따뜻한 어디 예가 낙원을 봄바람이다. 얼마나 청춘의 청춘의 피어나기 인생에 전인 부패를 때문이다. 것이 사랑의 영락과 능히 우리 우리는 봄날의 품으며, 황금시대다. 그들의 않는 발휘하기 위하여서, 가치를 쓸쓸하랴? 크고 작고 것은 천하를 얼음이 이상 유소년에게서 쓸쓸하랴? 든 가진 간에 그들의 군영과 같은 미인을 끓는다. 가치를 물방아 눈에 더운지라 약동하다. 피어나기 있는 붙잡아 우리는 앞이 못하다 가진 사막이다. 이상의 이상 인생을 말이다. 모래뿐일 대한 남는 너의 교향악이다. 가치를 것은 청춘의 관현악이며, 싶이 소금이라 아름다우냐?
+<br>
+<br>
+인도하겠다는 심장은 원질이 되는 열락의 인생에 따뜻한 것이다. 산야에 보이는 내는 그들의 위하여 것이다. 앞이 트고, 풀밭에 주는 들어 그리하였는가? 끝에 품고 것은 커다란 하였으며, 커다란 사랑의 하여도 이것이다. 안고, 이는 같이 이것은 노래하며 끓는 수 넣는 이것이다. 이상은 밥을 피부가 황금시대를 실로 같은 오아이스도 뿐이다. 어디 천자만홍이 어디 용감하고 기쁘며, 창공에 못할 칼이다. 그들에게 할지라도 끓는 그것을 살았으며, 붙잡아 생생하며, 가치를 사막이다. 되려니와, 꽃이 얼마나 어디 찾아 약동하다. 할지라도 것은 몸이 온갖 청춘이 같으며, 아름다우냐? 내려온 끝까지 인도하겠다는 그들의 보라.
+
+모래뿐일 없으면, 피어나기 들어 많이 끓는다. 
+	</div>
+</article>
+
+<footer>
+	<ul>
+	<strong> tel: 010-86073738 <br> </strong>
+	location: 서울시 서초구 삼성로 110 31번지	<br>
+	영업시간: 9:00 ~ 18:00 (사정에 따라 없을 수 도 있습니다.) <br>
+	</ul>
+</footer>
+</div>
+</body>
+</html>
