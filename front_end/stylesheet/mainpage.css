@@ -85,6 +85,17 @@
     text-align:center;
 }
 
+#btn_real_estate:hover{
+    background:gray;
+}
+#btn_criminal_law:hover{
+    background:gray;
+}
+#btn_civil_law:hover{
+    background: gray;
+
+}
+
 .block a{
     margin:3px auto;
 }
