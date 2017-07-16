@@ -47,6 +47,20 @@
 
 }
 
+#body_bar_content p{
+    font-family: NaumGothic;
+    float:left;
+    margin: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    outline-width: 1px;
+    outline-color: black;
+}
+#body_bar_content>form>p:hover{
+    color:yellow;
+}
+
+
 .container{
     width:730px;
     margin: 15px auto;
