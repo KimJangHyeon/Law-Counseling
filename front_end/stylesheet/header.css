@@ -1,17 +1,19 @@
 #header{
-    position:relative;
+    position:fixed;
+    top:0px;
+    z-index:1000000;
     width:100%;
-    height:120px;
+    height:150px;
 }
 
 #title_bar{
     position:relative;
-    height:100%;
+    height:70%;
     font-family: NaumGothic;
     overflow:hidden;
     background-color:#ffffff;
     vertical-align: middle;
-
+    color: #484848;
 }
 
 #logo{
@@ -27,6 +29,37 @@
     font-size: 70px;
     margin: 10px auto;
 }
+
+#body_header{
+    height:9%;
+}
+#body_top_bar{
+    background: #000000;
+    width:100%;
+    height:3%;
+    /*height:3px;*/
+}
+#body_bar{
+    background-color: rgba(0, 249, 255, 0.5);
+    width:100%;
+    /*height:95%;*/
+    height:45px;
+
+}
+
+#body_bar_content p{
+    font-family: NaumGothic;
+    float:left;
+    margin: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    outline-width: 1px;
+    outline-color: black;
+}
+#body_bar_content>form>p:hover{
+    color:yellow;
+}
+
 
 .container{
     width:730px;
