@@ -15,40 +15,157 @@
     <link rel="stylesheet" type="text/css" href="../stylesheet/write.css">
     <link rel="stylesheet" type="text/css" href="../stylesheet/text.css">
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script>
+
+var je_doc;
+
+function run()
+{
+    je_doc=document.getElementById('write_board').contentWindow.document;
+    je_doc.designMode = "on";
+}
+
+function bold(){
+    je_doc.execCommand("Bold", false, null);
+}
+
+function italic(){
+    je_doc.execCommand("italic", false, null);
+}
+
+function font_color() {
+    var s = prompt("글자색", "#0000ff");
+    if (s != "") je_doc.execCommand("createlink", false, s);
+}
+
+function background(){
+    var s=prompt("배경색", "#0000ff");
+    if(s!="") {
+        if (navigator.appVersion.indexOf("MSIE")!=-1) je_doc.execCommand("backcolor",false,s);
+        else je_doc.execCommand("hilitecolor",false,s);
+    }
+}
+
+function font_size(obj){
+    je_doc.execCommand('fontSize', false, obj.value);
+}
+
+function left(){
+    je_doc.exeCommand("justifyleft", false, null);
+}
+
+function middle(){
+    je_doc.execCommand("justifycenter", false, null);
+}
+
+function right(){
+    je_doc.execCommand("justifyright", false, null);
+}
+
+function indent(){
+    je_doc.execCommand("indent", false, null);
+}
+
+function outdent(){
+    je_doc.execCommand("outdent", false, null);
+}
+
+function ordered_list(){
+    je_doc.execCommand("insertorderedlist", false, null);
+}
+
+function unordered_list(){
+    je_doc.execCommand("insertunorderedlist", false, null);
+}
+</script>
 
 </head>
-<body>
+<body onload="run()">
 <div id="write_container">
     <div id="background"></div>
     <div id="write_box" class="box">
-        <form id="file_form" method="post" action="">
+        <form id="file_form" method="post" action="" enctype="multipart/form-data">
             <div id="file_title">
                 <a class="imp_level3">사건 파일</a><br/><br/><br/>
             </div>
+
             <div class = "btn_space">
-                <input class="btn_submit_cancel btn_color_cancel btn" style="width:20%" type="submit" value="upload img">
-                <input class="btn_submit_cancel btn_color_cancel btn" style="width:20%" type="submit" value="upload file">
+                <input class="btn_submit_cancel btn_color_cancel btn" style="width:20%" multiple="multiple" type="file" name="fileLoad[]" value="upload file">
             </div>
+
             <br/><br/>
+
             <input type="hidden" name="hiddenvalue" value="file">
+
             <label class="imp_level1">종류</label>
-            <select class="select_border">
-                <option value="saab">부동산</option>
-                <option value="mercedes">형법</option>
-                <option value="audi">민법</option>
+            <select class="select_border" id="law" name="law">
+                <option value="boo">부동산</option>
+                <option value="hyeong">형법</option>
+                <option value="min">민법</option>
             </select>
             <br/><br/>
-            <label class="imp_level1">내용</label>
-            <textarea rows="40" cols="100" style="font-size:18px">
+            <label class="imp_level1">내용</label><br/>
+            <a href='javascript:void(0)' title='볼드' onclick='bold()'><b>B</b></a>
+            <a href='javascript:void(0)' title='이텔릭' onclick='italic()'><i>I</i></a>
+            <select id="sel_font_size" onchange="font_size(this)">
+                <option value="1px">size 1</option>
+                <option value="2px">size 2</option>
+                <option value="3px">size 3</option>
+                <option value="4px" selected>size 4</option>
+                <option value="5px">size 5</option>
+                <option value="6px">size 6</option>
+                <option value="7px">size 7</option>
+            </select>
+            |
+            <a href='javascript:void(0)' title='글자색' onclick='font_color()'>글자색</a>
+            <a href='javascript:void(0)' title='바탕색' onclick='background()'>바탕색</a>
+
+            |
+
+            <a href='javascript:void(0)' title='왼쪽 정렬' onclick='left()'>왼쪽</a>
+            <a href='javascript:void(0)' title='가운데 정렬' onclick='middle()'>가운데</a>
+            <a href='javascript:void(0)' title='오른쪽 정렬' onclick='right()'>오른쪽</a>
+
+            |
+
+            <a href='javascript:void(0)' title='들여쓰기' onclick='indent()'>들여쓰기</a>
+            <a href='javascript:void(0)' title='내어쓰기' onclick='outdent()'>내어쓰기</a>
+
+            |
+
+            <a href='javascript:void(0)' title='순서 없는 목록' onclick='unordered_list()'>그냥목록</a>
+            <a href='javascript:void(0)' title='순서목록' onclick='ordered_list()'>순서목록</a>
+
+            <!--<select id="font_size">-->
+                    <!--<option value="13">13px</option>-->
+                    <!--<option value="15">15px</option>-->
+                    <!--<option value="18">18px</option>-->
+                    <!--<option value="23">23px</option>-->
+                    <!--<option value="28">28px</option>-->
+                    <!--<option value="35">35px</option>-->
+            <!--</select>-->
+            <!--<select id="font_color">-->
+                <!--<option value="blue">blue</option>-->
+                <!--<option value="red">red</option>-->
+                <!--<option value="black">black</option>-->
+                <!--<option value="green">green</option>-->
+            <!--</select>-->
+            <br/>
+            <iframe id='write_board' src="writeboard.html" style="width:700px; height:800px;">
+            </iframe>
+            <textarea id="send_board">
             </textarea>
+            <!--<textarea rows="40" cols="100">-->
+            <!--</textarea>-->
             <br/><br/>
             <div class = "btn_space">
                 <input class="btn_submit_cancel btn_color_cancel btn" type="submit" value="cancel">
-                <input class="btn_submit_cancel btn_color_submit btn" type="submit" value="submit">
+                <input class="btn_submit_cancel btn_color_submit btn" type="submit" onclick="pass_value()" value="submit" >
             </div>
         </form>
     </div>
 </div>
-
+<script type="text/javascript" src="../scripts/write.js"></script>
 </body>
 </html>

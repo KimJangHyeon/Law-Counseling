@@ -87,3 +87,7 @@ select.select_border{
     background-image: linear-gradient(-180deg, #404584 30%, #404584 30%);
 }
 #file_form
+
+#send_board{
+    display:none;
+}
