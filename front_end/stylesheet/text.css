@@ -27,11 +27,25 @@
     font-weight: 700 !important;
     color: #484848 !important;
     font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
-    margin: 0px !important;
+    margin: 0px ;
     word-wrap: break-word !important;
     font-size: 36px !important;
     line-height: 44px !important;
     letter-spacing: -0.6px !important;
     padding-top: 6px !important;
     padding-bottom: 6px !important;
+}
+
+.imp_level4{
+    font-weight: 900;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    margin: 0px ;
+    word-wrap: break-word !important;
+    font-size: 42px !important;
+    line-height: 56px !important;
+    letter-spacing: 10px !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+
+
 }

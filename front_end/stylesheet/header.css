@@ -3,7 +3,8 @@
     top:0px;
     z-index:1000000;
     width:100%;
-    height:150px;
+    height: 22%;
+
 }
 
 #title_bar{
@@ -14,6 +15,7 @@
     background-color:#ffffff;
     vertical-align: middle;
     color: #484848;
+
 }
 
 #logo{
