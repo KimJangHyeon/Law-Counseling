@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../stylesheet/header.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheet/mainpage.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheet/footer.css">
+    <link rel="stylesheet" href="../stylesheet/text.css">
+    <link rel="stylesheet" href="../stylesheet/read.css">
+    <title>최덕순 법률 사무소</title>
+</head>
+<body>
+    <div id="header">
+        <div id="title_bar">
+            <div class="container">
+                <form id="go_main" method="get" action="{{url_for('go_main')}}">
+                    <div id="logo">
+                        <img id="logo_img" onclick="document.getElementById('go_main').submit()" src="../image/logo.png"/>
+                    </div>
+                    <a id="title_txt" onclick="document.getElementById('go_main').submit()">최덕순 법률 사무소</a>
+                </form>
+
+            </div>
+        </div>
+        <div id="body_header">
+                <div id="body_top_bar"></div>
+                <div id="body_bar">
+                    <div id="body_bar_content">
+                        <form id="go_profile" method="get" action="{{url_for('go_profile')}}">
+                           <p onclick="document.getElementById('go_profile').submit()">프로필</p>
+                        </form>
+                        <p>|</p>
+                        <form id="go_navigation" method="get" action="{{url_for('go_navigation')}}">
+                           <p onclick="document.getElementById('go_navigation').submit()">찾아 오시는 길</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div id="body" style="height:120%">
+        <div id="background"></div>
+        <div id="body_content"  class="content">
+            <div id="title_date">
+                <div id="read_title"><p class="imp_level3">김장현김장현김장현김장현김장현김장현김장현김장현김장현김장현김장현김장현</p></div>
+                <div id="read_type"><p class="imp_level1" style="margin:auto;">ewoifejw</p></div>
+                <div id="read_date"><p class="imp_level1">woeifjo</p></div>
+            </div>
+            <div id="read_container">
+                <iframe id='read_board' src="writeboard.html">
+                </iframe>
+            </div>
+
+        </div>
+        <div id="list_container"><a id="go_list" href="#">목록</a></div>
+
+    </div>
+    <div id="footer">
+        <div id="footer_bar">
+        </div>
+    </div>
+</body>
+</html>
