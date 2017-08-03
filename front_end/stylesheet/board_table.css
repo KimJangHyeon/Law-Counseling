@@ -70,7 +70,7 @@
     margin:10% 0 0 0 ;
     left:20%;
     width:60%;
-    height:60%;
+    height:58.7%;
     position:absolute;
     background:white;
 }
@@ -101,7 +101,7 @@ tr{
   }
   .table td,
   .table th {
-    background-color: #fff !important;
+    background-color: #fff ;
   }
 
   .table {
@@ -170,6 +170,10 @@ tr{
 .pagination > li {
   display: inline;
 }
+.paging_block{
+    display: inline;
+}
+
 .pagination > li > a,
 .pagination > li > span {
   position: relative;
@@ -182,6 +186,18 @@ tr{
   background-color: #fff;
   border: 1px solid #ddd;
 }
+.paging_a{
+    position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {
   margin-left: 0;

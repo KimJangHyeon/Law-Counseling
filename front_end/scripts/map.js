@@ -4,8 +4,8 @@
 
 
 function myMap(){
-    lat=37.5558429;
-    lng=127.04946289999998;
+    lat=37.492735;
+    lng=127.00785040000005;
     var myCenter=new google.maps.LatLng(lat, lng);
     var mapCanvas=document.getElementById("map_block");
     var mapOptions={center:myCenter, zoom:18};

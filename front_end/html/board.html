@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="../stylesheet/text.css">
 </head>
 <body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <div id="header">
     <div id="title_bar">
         <div class="container">
@@ -47,35 +48,35 @@
         <div id="background"></div>
         <div id="body_content"  class="content">
             <div id="board_header">
-                <div id="title_left">
+                <div id="title_left" onClick="plusSlides(-1)">
                     <p>&#10094;</p>
                 </div>
                 <div class="board_title">
                     <p class="imp_level4 " style="margin: 5%;">부동산</p>
                 </div>
-                <!--<div class="board_title">-->
-                    <!--<p>형법</p>-->
-                <!--</div>-->
-                <!--<div class="board_title">-->
-                    <!--<p>민법</p>-->
-                <!--</div>-->
-                <div id="title_right">
+                <div class="board_title">
+                    <p class="imp_level4 " style="margin: 5%;">형법</p>
+                </div>
+                <div class="board_title">
+                    <p class="imp_level4 " style="margin: 5%;">민법</p>
+                </div>
+                <div id="title_right" onClick="plusSlides(-1)">
                     <p>&#10095;</p>
                 </div>
             </div>
-            <div id="board_container">
+            <div id="board_container" style="border: 2px gray solid;">
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th>No.</th>
-                            <th>글쓴이</th>
-                            <th>제목</th>
-                            <th>날짜</th>
-                            <th>조회수</th>
+                            <th style="background-color: gray">No.</th>
+                            <th style="background-color: gray">글쓴이</th>
+                            <th style="background-color: gray">제목</th>
+                            <th style="background-color: gray">날짜</th>
+                            <th style="background-color: gray">조회수</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody id = 't_body'>
+                        <tr id = 't_row'>
                             <td>165</td>
                             <td>admin</td>
                             <td>김장현입니다.</td>
@@ -150,7 +151,7 @@
             </div>
             <a class="btn btn-default">글쓰기</a>
         <div id="board_page_position" class="text-center">
-            <ul class="pagination">
+            <ul id = 'pageShow' class="pagination">
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
@@ -166,5 +167,6 @@
 
         </div>
     </div>
+<script src="../scripts/board.js"></script>
 </body>
 </html>
