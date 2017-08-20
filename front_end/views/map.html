@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body,html{
+            width:100%;
+            height:100%;
+            margin:0;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../stylesheet/header.css">
+    <link rel="stylesheet" href="../stylesheet/map.css">
+</head>
+<body>
+<div id="container">
+    <div id="header">
+
+        <div id="header_upper">
+
+        </div>
+        <div id="header_middle">
+            <div id="header_middle_content">
+                <form id="go_main" method="get" action="/">
+                <img id="logo_img" onclick="document.getElementById('go_main').submit()" src="../image/logo.png"/>
+                <a id="title_txt" onclick="document.getElementById('go_main').submit()">최덕순 법률 사무소</a>
+                </form>
+
+            </div>
+
+        </div>
+        <div id="header_bottom">
+            <form id="go_profile" method="get" action="/profil">
+                <p onclick="document.getElementById('go_profile').submit()">프로필</p>
+            </form>
+            <p>|</p>
+            <form id="go_navigation" method="get" action="/route">
+                <p onclick="document.getElementById('go_navigation').submit()">찾아 오시는 길</p>
+            </form>
+        </div>
+    </div>
+
+    <div id="body" class="map">
+        <div id="map_container">
+            <div id="map_block">
+            </div>
+
+            <div id="explain_block">
+                <h3>지하철</h3>
+                <lu>
+                    <li>
+                        1호선
+                    </li>
+                    <li>
+                        2호선
+                    </li>
+                    <li>
+                        3호선
+                    </li>
+                    <li>
+                        4호선
+                    </li>
+                    <li>
+                        5호선
+                    </li>
+                </lu>
+                <h3>버스</h3>
+                <lu>
+                    <li>
+                        1호선
+                    </li>
+                    <li>
+                        2호선
+                    </li>
+                    <li>
+                        3호선
+                    </li>
+                    <li>
+                        4호선
+                    </li>
+                    <li>
+                        5호선
+                    </li>
+                </lu>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <h4> tel: 010-8607-3738</h4>
+        <p>location: 서울시 서초구 삼성로 110 31번지</p>
+        <p>영업시간: 9:00 ~ 18:00 (사정에 따라 없을 수 도 있습니다.)</p>
+    </div>
+</div>
+
+<script src="../scripts/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk5c_J98d8Ln_kRrdJL7-5Vxk36SYmQEc&callback=myMap"></script>
+</body>
+</html>

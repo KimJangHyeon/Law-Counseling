@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body,html{
+            width:100%;
+            height:100%;
+            margin:0;
+        }
+        html, body {
+            			width: 100%;
+            			height: 100%;
+            			margin: 0;
+        		}
+        .right_area{
+            width:79%;
+            margin:auto 10% 0 10%;
+        }
+        nav{
+			float:left;
+			width:400px;
+            height:300px;
+            margin-left:10%;
+		}
+        article{
+			float: left;
+			width: 800px;
+
+			margin-left: -1px;
+
+		}
+		.right_area h3 {
+			position: relative;
+			text-align:  center;
+			font-size: 32px;
+			border-bottom: solid 1px #d7dade;
+			border-top: solid 1px #d7dade;
+			padding-bottom: 15px;
+			font-weight: 600;
+			letter-spacing: -1px;
+
+			margin-top: 50px;
+            margin-bottom:0;
+			background-color: #4169e1;
+		}
+		.container1{
+
+		}
+
+		.header1{
+
+            text-align:center;
+		}
+
+
+
+		footer{
+				clear: both;
+			border-top: 1px solid gray;
+			text-align: center;
+			padding: 20px;
+			background-color: #767676;
+		}
+
+		.story{
+			float: left;
+			background-color: #fff5ee;
+            height:390.5px;
+            padding:5px;
+		}
+        .profile{
+            height:600px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../stylesheet/header.css">
+</head>
+<body>
+<div id="container">
+    <div id="header">
+
+        <div id="header_upper">
+
+        </div>
+        <div id="header_middle">
+            <div id="header_middle_content">
+                <form id="go_main" method="get" action="/">
+                <img id="logo_img" onclick="document.getElementById('go_main').submit()" src="../image/logo.png"/>
+                <a id="title_txt" onclick="document.getElementById('go_main').submit()">최덕순 법률 사무소</a>
+                </form>
+
+            </div>
+
+        </div>
+        <div id="header_bottom">
+            <form id="go_profile" method="get" action="/profil">
+                <p onclick="document.getElementById('go_profile').submit()">프로필</p>
+            </form>
+            <p>|</p>
+            <form id="go_navigation" method="get" action="/route">
+                <p onclick="document.getElementById('go_navigation').submit()">찾아 오시는 길</p>
+            </form>
+        </div>
+    </div>
+
+    <div id="body" class="profile">
+
+        <div class="container1">
+	<div class="header1">
+		<div class="right_area">
+			<h3> 변호사 소개 </h3>
+		</div>
+	</div>
+<nav>
+	<div class="profil_picture">
+	<img src="../image/profil2.jpg" alt="">
+	</div>
+</nav>
+<article>
+
+	<div class="story">
+		<h2>경력</h2>
+        강원 고성 출생 <br>
+        고성고등학교 졸업<br>
+        연세대학교 상경대학 경제학과 졸업(84학번)<br>
+        (주)럭키(현 LG화학) 영업부 근무<br>
+        한보철강공업(주) 자금부 대리<br>
+
+        <br>
+        공인중개사 자격 취득(2002년)<br>
+        사법고시 합격(제46회)<br>
+        사법연수원 2년 수료(36기)<br>
+        법무법인 로21 변호사(2007년)
+        현 법무법인 태일 구성변호사(2007년)<br>
+
+        <h1>현재</h1> <br>
+        한국공인중개사협회 자문 <br>
+        서울시 동작구청 자문 <br>
+        서울시 동작구 지적재조사위원회 위원 (2017.3.12~2019.3.11) <br>
+	</div>
+</article>
+        </div>
+
+    </div>
+
+    <div id="footer">
+
+        <h4> tel: 010-8607-3738  </h4>
+        <p>location: 서울시 서초구 삼성로 110 31번지</p>
+        <p>영업시간: 9:00 ~ 18:00 (사정에 따라 없을 수 도 있습니다.)</p>
+    </div>
+</div>
+</body>
+</html>

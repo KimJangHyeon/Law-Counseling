@@ -1,13 +1,13 @@
 module.exports = function(app)
 {
      app.get('/',function(req,res){
-        res.render('mainpage.html')
+        res.render('homepage.html')
      });
      app.post('/',function(req,res){
-        res.render('mainpage.html')
+        res.render('homepage.html')
      });
      app.get('/profil',function(req,res){
-        res.render('Message_Board.html');
+        res.render('profile.html');
     });
      app.get('/write',function(req,res){
         res.render('write.html');

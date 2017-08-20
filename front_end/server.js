@@ -35,7 +35,7 @@ conn.query(sql, function(err, rows, fields){
               console.log(rows[i]);
             }
           } 
-          res.render('board.ejs',{title: rows[0].title});
+          res.render('board.ejs' ,{title: rows[0].title});
     }); 
     });
 app.set('views', __dirname + '/views');

@@ -1,10 +1,14 @@
 /**
+ * Created by rlawk on 2017-08-10.
+ */
+/**
  * Created by rlawk on 2017-07-29.
  */
+var kinds;//어떤 법인지
 var estateSize;
 var crimSize;
 var civilSize;
-var db_nodes;
+var db_nodes;//그법에 node 갯수
 init();
 
 function init(){
@@ -12,12 +16,20 @@ function init(){
     var b = 32;//형법 사건
     var c = 21;//민법 사건
 
+    kinds=1;//각각에 맞는 번호로 우선 넣기 (부동산1, 형법2, 민법3)
+
     estateSize = a;
     crimSize = b;
     civilSize = c;
 
-    //배열 생성
-    db_nodes =new Array();
+    //배열 생성(node수)(6)
+    if(kinds==1)
+        db_nodes = new Array(estateSize);
+    else if(kinds==2)
+        db_nodes = new Array(crimSize);
+    else
+        db_nodes = new Array(civilSize);
+
 }
 
 
@@ -29,6 +41,10 @@ showSlides(slideIndex);
 
 function plusSlides(n){
     showSlides(slideIndex +=n);
+    kinds+=n;
+    if(kinds>3){kinds = 1;}
+    if(kinds==0){kinds=3;}
+    alert(kinds);
 }
 
 function currentSlide(n) {

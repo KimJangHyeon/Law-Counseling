@@ -21,7 +21,7 @@
 <div id="header">
         <div id="title_bar">
             <div class="container">
-                <form id="go_main" method="get" action="{{url_for('go_main')}}">
+                <form id="go_main" method="get" action="/">
                     <div id="logo">
                         <img id="logo_img" onclick="document.getElementById('go_main').submit()" src="../image/logo.png"/>
                     </div>
@@ -34,11 +34,11 @@
                 <div id="body_top_bar"></div>
                 <div id="body_bar">
                     <div id="body_bar_content">
-                        <form id="go_profile" method="get" action="{{url_for('go_profile')}}">
+                        <form id="go_profile" method="get" action="/profil">
                            <p onclick="document.getElementById('go_profile').submit()">프로필</p>
                         </form>
                         <p>|</p>
-                        <form id="go_navigation" method="get" action="{{url_for('go_navigation')}}">
+                        <form id="go_navigation" method="get" action="/route">
                            <p onclick="document.getElementById('go_navigation').submit()">찾아 오시는 길</p>
                         </form>
                     </div>

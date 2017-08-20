@@ -1,0 +1,41 @@
+.map{
+    height:auto;
+}
+
+#map_container{
+    border:.1px solid rgba(255, 255, 255, 0.61);
+    position:relative;
+    margin:10% 20% 10% 20%;
+    width:60%;
+    height:1000px;
+    background: rgba(255, 255, 255, 0.61);
+    border-radius: 1%;
+}
+
+#map_block{
+    width:80%;
+    height:45%;
+    margin:8% 10% 0 10%;
+    background:gray;
+}
+
+#explain_block{
+    margin:10% 10% 0 10%;
+    height:35%;
+    width:80%;
+}
+
+
+
+
+/*<div id="body" class="map">*/
+        /*<div id="map_container">*/
+            /*<div id="map_block">*/
+                /**/
+            /*</div>*/
+            /*<div id="explain_block">*/
+                /**/
+            /*</div>*/
+        /*</div>*/
+    /*</div>*/
+/*!**!*/

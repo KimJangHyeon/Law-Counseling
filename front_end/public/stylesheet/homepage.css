@@ -1,0 +1,33 @@
+#button_container{
+    height:600px;
+    overflow:hidden;
+    width:80%;
+    margin: 0 175px 0 175px;
+}
+.home_button_block{
+    cursor:pointer;
+    margin:195px 90px 195px 90px;
+    float:left;
+    width:210px;
+    height:210px;
+    border: 3px solid #000000;
+    box-shadow: 0 5px 50px rgba(11, 12, 12, 1);
+    border-radius: 20px;
+    font-weight:bold;
+    background-color: green;
+    overflow:hidden;
+    vertical-align: middle;
+    display:table-cell;
+    text-align:center;
+}
+.home_button_block:hover{
+    background:greenyellow;
+}
+
+.homepage{
+    height:600px;
+}
+
+.button{
+
+}

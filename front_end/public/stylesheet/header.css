@@ -1,69 +1,107 @@
+/*max width:1550px;*/
+
+#container{
+    width:1519px;
+    height:auto;
+    margin:0 auto;
+    text-align: center;
+    background-image:url('../image/background3.jpg');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
 #header{
-    position:fixed;
-    top:0px;
-    z-index:1000000;
+    height:183px;
     width:100%;
-    height: 22%;
+}
+
+#header_upper{
+    width:100%;
+    height:3px;
+    background: #000000;
+}
+
+#header_middle{
+    width:100%;
+    height:130px;
+    background: #ffffff;
 
 }
 
-#title_bar{
-    position:relative;
-    height:70%;
-    font-family: NaumGothic;
-    overflow:hidden;
-    background-color:#ffffff;
-    vertical-align: middle;
-    color: #484848;
-
+#header_middle_content{
+    max-width: 90%;
+    height:130px;
+    margin:auto;
+    text-align:center;
 }
-
+#title{
+    max-width:90%;
+    height:130px;
+    display:inline-block;
+    margin:0;
+}
+#header_middle_content a{
+    font-size: 90px;
+    margin: 30px auto;
+    font-weight: 700 !important;
+    color: #484848 !important;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    word-wrap: break-word !important;
+    line-height: 44px !important;
+    letter-spacing: -0.6px !important;
+    vertical-align: 30px;
+    display:inline-block;
+}
 #logo{
-    float:left;
-    margin-right: 30px;
+    width:130px;
+    height:130px;
+    display:inline-block;
 }
 #logo_img{
-    width:90px;
-    height:auto;
+    width:130px;
+    height:130px;
 }
 
-#title_txt{
-    font-size: 70px;
-    margin: 10px auto;
-}
-
-#body_header{
-    height:9%;
-}
-#body_top_bar{
-    background: #000000;
+#header_bottom{
     width:100%;
-    height:3%;
-    /*height:3px;*/
-}
-#body_bar{
-    background-color: rgba(0, 249, 255, 0.5);
-    width:100%;
-    /*height:95%;*/
-    height:45px;
-
+    height:50px;
+    background: rgba(173, 255, 47, 0.45);
+    overflow:hidden;
 }
 
-#body_bar_content p{
-    font-family: NaumGothic;
+#header_bottom  p{
     float:left;
-    margin: 15px;
-    font-weight: 600;
-    color: #ffffff;
-    outline-width: 1px;
-    outline-color: black;
+    margin-left:20px;
 }
-#body_bar_content>form>p:hover{
+
+
+#body{
+    width:100%;
+}
+
+#footer{
+    width:100%;
+    height:150px;
+    background-color:gray;
+    border:.1px solid gray;
+}
+
+#header_bottom p{
+    color:white;
+    cursor:default;
+}
+
+#header_bottom form>p{
+    cursor:pointer;
+}
+
+#header_bottom form>p:hover{
     color:yellow;
 }
 
+#footer p{
+    margin:18px auto;
+}
+#footer h4{
+    margin:18px auto;
 
-.container{
-    width:730px;
-    margin: 15px auto;
 }

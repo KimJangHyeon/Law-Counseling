@@ -10,11 +10,7 @@
     </style>
     <meta charset="UTF-8">
     <title>Title</title>
-
     <link rel="stylesheet" href="../stylesheet/header.css">
-    <link rel="stylesheet" href="../stylesheet/text.css">
-    <link rel="stylesheet" href="../stylesheet/read.css">
-
 </head>
 <body>
 <div id="container">
@@ -25,7 +21,7 @@
         </div>
         <div id="header_middle">
             <div id="header_middle_content">
-                <form id="go_main" method="get" action="/">
+                <form id="go_main" method="get" action="{{url_for('go_main')}}">
                 <img id="logo_img" onclick="document.getElementById('go_main').submit()" src="../image/logo.png"/>
                 <a id="title_txt" onclick="document.getElementById('go_main').submit()">최덕순 법률 사무소</a>
                 </form>
@@ -44,23 +40,7 @@
         </div>
     </div>
 
-    <div id="body" class="read">
-        <div id="background"></div>
-            <div id="body_content"  class="content">
-                <div id="title_date">
-                    <div id="read_title"><p class="imp_level3" style="margin:auto;"><br>그 index에 해당하는 제목 넣으셍</p></div><br/>
-                    <div id="read_type"><p class="imp_level2" style="margin:auto;">작성자:</p></div>
-                    <div id="read_date"><p class="imp_level2">날짜:</p></div>
-                </div><br/>
-                <div id="read_container">
-                <!--작동안될시 writeboard.html빼셍~!-->
-                    <iframe id='read_board' src="">
-                    </iframe>
-                </div>
-                <!--클릭시 board로 나가도록 href에 넣으셍-->
-                <a href="#"><div id="list_container" class="btn_color_submit btn"><p id="go_list" href="#">List</p></div></a>
-            </div>
-
+    <div id="body">
 
     </div>
 
@@ -70,7 +50,5 @@
         <p>영업시간: 9:00 ~ 18:00 (사정에 따라 없을 수 도 있습니다.)</p>
     </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="../scripts/read.js"></script>
 </body>
 </html>

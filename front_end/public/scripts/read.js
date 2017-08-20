@@ -19,7 +19,8 @@ function init(db_title, db_date, db_writer, db_write){
 
 
 function putValue(){
-    $("#read_title").find('p').html(title);
+    alert("hello");
+    $("#read_title").find('p').html('<br>' + title);
     $("#read_type").find('p').html('날짜: '+date);
     $("#read_date").find('p').html('작성자: '+ writer);
     var body = $("#read_board").contents().find('body');
